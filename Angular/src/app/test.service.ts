@@ -9,6 +9,6 @@ export class TestService {
   constructor(private http:HttpClient) { }
 
   test(){
-    return this.http.get('http://localhost:3000')
+    return this.http.get('http://localhost:3000/api')
   }
 }
