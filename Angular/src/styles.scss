@@ -58,3 +58,30 @@ a{
     color: $primary !important;
     font-weight: 700;
 }
+
+.text-different{
+    text-shadow: 2px 2px #1FA78F;
+    font-weight: 700;
+}
+
+.form-control{
+    background-color: transparent;
+    border: 2px solid $primary;
+    border-radius: 3px;
+    color: $white;
+    &:hover{
+        background-color: transparent;
+        color: $white;
+    }
+    &:focus{
+        background-color: transparent;
+        outline: none !important;
+        border:2px solid $primary;
+        box-shadow: 0 0 10px $primaryHover;
+        color: $white;
+    }
+    &::placeholder {
+        text-align: center; 
+        color: rgba(245, 245, 245, 0.797);
+    }
+}
