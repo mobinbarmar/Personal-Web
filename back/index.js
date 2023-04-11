@@ -23,7 +23,7 @@ app.use(cookieParser());
 app.use(cors({'origin': 'http://localhost:4200'}))
 
 app.get('/', (req,res) => {
-    res.send('mobin')
+    res.json({'name': 'mobin'})
 })
 // app.use('/', indexRouter);
 // app.use('/users', usersRouter);
