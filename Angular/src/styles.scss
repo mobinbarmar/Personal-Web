@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+//! Palette
+    $primary: #1FA78F;
+    $primaryHover: #278e7b;
+    $primaryActive: #297e6f;
+    $white: whitesmoke;
+    $black: #222222;
+
+//! Orgins
+body {
+    background-color: $black;
+}
+p, h1, h2, h3, h4, h5, h6, a{
+    color: $white;
+}
+a{
+    text-decoration: none;
+    &:hover{
+        color: $primaryHover;
+    }
+}
+
+//! Bootstrap customization
+.btn-primary {
+    background-color: $primary;
+    color: $white;
+    font-weight: 700;
+    padding: 10px 33px;
+    border: $primary;
+    &:hover{
+        background-color: $primaryHover;
+        border: $primaryHover;
+    }
+    &:active{
+        background-color: $primaryActive !important;
+        border: $primaryActive;
+    }
+}
+
+.btn-outline-primary{
+    color: $primary;
+    font-weight: 700;
+    padding: 7px 33px;
+    border: $primary 4px solid;
+    &:hover{
+        background-color: $primary;
+        color: $white;
+        border: $primary 4px solid;
+    }
+    &:active{
+        background-color: $primaryActive !important;
+        color: $white;
+        border: $primaryActive 4px solid !important;
+    }
+}
+
+.text-primary{
+    color: $primary !important;
+    font-weight: 700;
+}
