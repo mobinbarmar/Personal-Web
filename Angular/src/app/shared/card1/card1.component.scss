@@ -10,3 +10,7 @@ $primary: #1FA78F;
     border-color: $primary;
     border-style:solid ;
 }
+.card1-mobile{
+    display: flex !important;
+    flex-flow: row;
+}
