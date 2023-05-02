@@ -12,4 +12,10 @@ export class NavComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  optionToggle: boolean = false
+
+  OptionToggle(){
+    this.optionToggle = !this.optionToggle
+  }
+
 }
