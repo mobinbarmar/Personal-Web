@@ -1,0 +1,12 @@
+$black2: #1A1A1A;
+$white: whitesmoke;
+$primary: #1FA78F;
+.card{
+    background-color: $black2;
+    border-right: 5px;
+    border-bottom: 5px;
+    border-top: 0px;
+    border-left: 0px;
+    border-color: $primary;
+    border-style:solid ;
+}
