@@ -12,3 +12,34 @@ $primary: #1FA78F;
     right: 70px;
     top: 150px;
 }
+
+.dot{
+    width: 25px;
+    height: 25px;
+    background-color: $primary;
+    position: absolute;
+    border-radius: 50%;
+    &:nth-child(1){
+        top: 200px;
+    }
+    &:nth-child(2){
+        top: 100px;
+    }
+    &:nth-child(3){
+        top: 400px;
+    }
+}
+
+.line{
+    width: 4px;
+    height: 140px;
+    background-color: $primary;
+    position: absolute;
+    left: 10px;
+    &:nth-child(2){
+        top: 240px;
+    }
+}
+.experience::first-letter{
+    font-size: 60px;
+}
