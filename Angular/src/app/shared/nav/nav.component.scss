@@ -1,3 +1,14 @@
+$black2: #1A1A1A;
+
 .options > a::first-letter{
     font-weight: 800;
+}
+
+.mobile-options{
+    z-index: 999;
+    background-color: $black2;
+    opacity: 86%;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
 }
