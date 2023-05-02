@@ -1,4 +1,4 @@
-<div class="bg-black2 d-none d-md-block">
+<div class="bg-black2 d-none d-md-block" style="z-index: 999;">
     <div class="d-flex justify-content-between align-items-center py-2 container">
         <div class="d-flex align-items-center">
             <app-logo class="me-5" [width]="'55px'"></app-logo>
@@ -15,7 +15,7 @@
     </div>
 </div>
 
-<div class="d-block d-md-none bg-black2">
+<div class="d-block d-md-none bg-black2" style="z-index: 999;">
     <div class="container d-flex justify-content-between align-items-center py-2">
         <div><app-logo class="me-5" [width]="'55px'"></app-logo></div>
         <div (click)="OptionToggle()" style="cursor: pointer;">

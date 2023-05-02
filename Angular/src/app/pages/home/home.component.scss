@@ -1,0 +1,13 @@
+$primary: #1FA78F;
+.header{
+    position: relative;
+}
+.header > span{
+    width: 600px;
+    height: 600px;
+    background-color: $primary;
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(200px);
+    right: 200px;
+}
