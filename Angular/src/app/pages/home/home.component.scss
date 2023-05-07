@@ -1,4 +1,11 @@
+//! Palette
 $primary: #1FA78F;
+$primaryHover: #278e7b;
+$primaryActive: #297e6f;
+$white: whitesmoke;
+$whiteRare: rgba(245, 245, 245, 0.797);
+$black: #222222;
+$black2: #1A1A1A;
 .header{
     position: relative;
 }
@@ -53,4 +60,23 @@ $primary: #1FA78F;
     width: 4px;
     height: 100px;
     background-color: $primary;
+}
+
+.page > .active-page > span{
+    background-color: $primary;
+    width: 70px;
+    cursor: auto;
+}
+.page > .active-page{
+    width: 80px !important;
+}
+.page > div{
+    width: 50px;
+}
+.page > div > span{
+    width: 40px;
+    height: 4px;
+    background-color: $white;
+    position: absolute;
+    cursor: pointer;
 }
