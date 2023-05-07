@@ -69,8 +69,8 @@
 <section class="bg-black1 py-5">
   <div class="py-5 container">
     
-    <div class="d-flex">
-      <div>
+    <div class="d-flex justify-content-between">
+      <div class="col-4">
         <div>
           <h1 class="text-rare experience">Experience</h1>
         </div>
@@ -102,21 +102,36 @@
         </div>
       </div>
 
-      <div class="col-8">
+      <div class="col-7">
         <div class="d-flex">
-          <app-card1></app-card1>
-          <app-card1></app-card1>
+          <app-card1 *ngIf="page == '1'"></app-card1>
+          <app-card1 *ngIf="page == '1'"></app-card1>
+          
+          <app-card1 *ngIf="page == '2'"></app-card1>
+          <app-card1 *ngIf="page == '2'"></app-card1>
+
+          <app-card1 *ngIf="page == '3'"></app-card1>
+          <app-card1 *ngIf="page == '3'"></app-card1>
         </div>
 
         <div class="page d-flex justify-content-center">
-          <div style="display: block;position: relative;" class="active-page">
-            <span></span>
+          <div style="display: block;position: relative;" class="active-page" *ngIf="page == '1'">
+            <span (click)="selectPage('1')"></span>
           </div>
-          <div style="display: block;position: relative;" >
-            <span></span>
+          <div style="display: block;position: relative;" *ngIf="page !== '1'">
+            <span (click)="selectPage('1')"></span>
           </div>
-          <div style="display: block;position: relative;" >
-            <span></span>
+          <div style="display: block;position: relative;" class="active-page" *ngIf="page == '2'">
+            <span (click)="selectPage('2')"></span>
+          </div>
+          <div style="display: block;position: relative;" *ngIf="page !== '2'">
+            <span (click)="selectPage('2')"></span>
+          </div>
+          <div style="display: block;position: relative;" class="active-page" *ngIf="page == '3'">
+            <span (click)="selectPage('3')"></span>
+          </div>
+          <div style="display: block;position: relative;" *ngIf="page !== '3'">
+            <span (click)="selectPage('3')"></span>
           </div>
         </div>
       </div>

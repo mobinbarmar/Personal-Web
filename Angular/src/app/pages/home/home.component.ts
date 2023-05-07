@@ -11,5 +11,11 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  page:string = '1'
+
+  selectPage(number:string){
+    this.page = number
+    console.log(number);
+  }
 
 }
