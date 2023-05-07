@@ -43,3 +43,14 @@ $primary: #1FA78F;
 .experience::first-letter{
     font-size: 60px;
 }
+.dot1{
+    width: 25px;
+    height: 25px;
+    background-color: $primary;
+    border-radius: 50%;
+}
+.line1{
+    width: 4px;
+    height: 140px;
+    background-color: $primary;
+}
