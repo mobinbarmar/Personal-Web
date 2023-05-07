@@ -69,7 +69,7 @@ a{
 .form-control{
     background-color: transparent;
     border: 2px solid $primary;
-    border-radius: 3px;
+    border-radius: 3px !important;
     color: $white;
     &:hover{
         background-color: transparent;
