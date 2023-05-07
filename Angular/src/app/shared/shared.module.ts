@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Card1Component } from './card1/card1.component';
 import { LogoComponent } from './logo/logo.component';
 import { NavComponent } from './nav/nav.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -10,7 +11,8 @@ import { NavComponent } from './nav/nav.component';
   declarations: [
     Card1Component,
     LogoComponent,
-    NavComponent
+    NavComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule
@@ -18,7 +20,8 @@ import { NavComponent } from './nav/nav.component';
   exports:[
     Card1Component,
     LogoComponent,
-    NavComponent
+    NavComponent,
+    FooterComponent
   ]
 })
 export class SharedModule { }

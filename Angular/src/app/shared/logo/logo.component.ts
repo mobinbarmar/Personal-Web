@@ -13,5 +13,6 @@ export class LogoComponent implements OnInit {
   }
 
   @Input() width:string = '60px'
+  @Input() white:boolean = false
 
 }
