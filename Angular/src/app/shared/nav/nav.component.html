@@ -1,37 +1,39 @@
-<div class="bg-black2 d-none d-md-block" style="z-index: 999;">
-    <div class="d-flex justify-content-between align-items-center py-2 container">
-        <div class="d-flex align-items-center">
-            <app-logo class="me-5" [width]="'55px'"></app-logo>
-            <div class="options d-flex ms-5">
-                <a href="#">Home</a>
-                <a href="#" class="mx-5">Samples</a>
-                <a href="#">About me</a>
+<section>
+    <div class="bg-black2 d-none d-md-block" style="z-index: 999;">
+        <div class="d-flex justify-content-between align-items-center py-2 container">
+            <div class="d-flex align-items-center">
+                <app-logo class="me-5" [width]="'55px'"></app-logo>
+                <div class="options d-flex ms-5">
+                    <a href="#">Home</a>
+                    <a href="#" class="mx-5">Samples</a>
+                    <a href="#">About me</a>
+                </div>
+            </div>
+            <div>
+                <button class="btn btn-primary me-3 btn-sm">Login</button>
+                <button class="btn btn-outline-primary btn-sm">Sign up</button>
             </div>
         </div>
-        <div>
-            <button class="btn btn-primary me-3 btn-sm">Login</button>
-            <button class="btn btn-outline-primary btn-sm">Sign up</button>
-        </div>
     </div>
-</div>
-
-<div class="d-block d-md-none bg-black2" style="z-index: 999;">
-    <div class="container d-flex justify-content-between align-items-center py-2">
-        <div><app-logo class="me-5" [width]="'55px'"></app-logo></div>
-        <div (click)="OptionToggle()" style="cursor: pointer;">
-            <div class="text-primary" *ngIf="!optionToggle">
-                000
+    
+    <div class="d-block d-md-none bg-black2" style="z-index: 999;">
+        <div class="container d-flex justify-content-between align-items-center py-2">
+            <div><app-logo class="me-5" [width]="'55px'"></app-logo></div>
+            <div (click)="OptionToggle()" style="cursor: pointer;">
+                <div class="text-primary" *ngIf="!optionToggle">
+                    000
+                </div>
+                <div class="text-primary" *ngIf="optionToggle">X</div>
             </div>
-            <div class="text-primary" *ngIf="optionToggle">X</div>
         </div>
     </div>
-</div>
-
-<div class="mobile-options" *ngIf="optionToggle">
-    <div class="options d-flex ms-5 flex-column align-items-center">
-        <a href="#" class="mt-5">Home</a>
-        <a href="#" class="mt-5">Samples</a>
-        <a href="#" class="mt-5">About me</a>
-        <a href="#" class="mt-5">Login</a>
+    
+    <div class="mobile-options" *ngIf="optionToggle">
+        <div class="options d-flex ms-5 flex-column align-items-center">
+            <a href="#" class="mt-5">Home</a>
+            <a href="#" class="mt-5">Samples</a>
+            <a href="#" class="mt-5">About me</a>
+            <a href="#" class="mt-5">Login</a>
+        </div>
     </div>
-</div>
+</section>
