@@ -12,6 +12,7 @@ export class Card1Component implements OnInit {
   ngOnInit(): void {
   }
 
+  @Input() img:string = '../../../assets/img/icons8-info-384 1.png'
   @Input() text:string = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto dignissimos reprehenderit blanditiis natus deleniti provident modi aut accusamus nobis fugiat mollitia molestias repellendus, distinctio sapiente, et accusantium sint quasi vero?'
 
 }
