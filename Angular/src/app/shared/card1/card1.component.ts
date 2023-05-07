@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-card1',
@@ -11,5 +11,7 @@ export class Card1Component implements OnInit {
 
   ngOnInit(): void {
   }
+
+  @Input() text:string = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto dignissimos reprehenderit blanditiis natus deleniti provident modi aut accusamus nobis fugiat mollitia molestias repellendus, distinctio sapiente, et accusantium sint quasi vero?'
 
 }

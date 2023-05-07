@@ -104,14 +104,26 @@
 
       <div class="col-7">
         <div class="d-flex">
-          <app-card1 *ngIf="page == '1'"></app-card1>
-          <app-card1 *ngIf="page == '1'"></app-card1>
+          <div class="col-6" *ngIf="page == '1'">
+            <app-card1 [text]="'Mobin'"></app-card1>
+          </div>
+          <div class="col-6" *ngIf="page == '1'">
+            <app-card1 ></app-card1>
+          </div>
           
-          <app-card1 *ngIf="page == '2'"></app-card1>
-          <app-card1 *ngIf="page == '2'"></app-card1>
+          <div class="col-6" *ngIf="page == '2'">
+            <app-card1></app-card1>
+          </div>
+          <div class="col-6" *ngIf="page == '2'">
+            <app-card1 [text]="'Sina'"></app-card1>
+          </div>
 
-          <app-card1 *ngIf="page == '3'"></app-card1>
-          <app-card1 *ngIf="page == '3'"></app-card1>
+          <div class="col-6" *ngIf="page == '3'">
+            <app-card1 [text]="'Mehdi'"></app-card1>
+          </div>
+          <div class="col-6" *ngIf="page == '3'">
+            <app-card1></app-card1>
+          </div>
         </div>
 
         <div class="page d-flex justify-content-center">
