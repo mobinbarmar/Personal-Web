@@ -15,7 +15,6 @@ export class HomeComponent implements OnInit {
 
   selectPage(number:string){
     this.page = number
-    console.log(number);
   }
 
 }
