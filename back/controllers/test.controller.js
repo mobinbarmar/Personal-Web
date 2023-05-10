@@ -1,6 +1,18 @@
 
 exports.test = (req, res) => {
     res.json({'mobin': 'this is a message 1'})
+    try {
+        Test.create({
+            'name': 'Mobin',
+            'family': 'Barmar'
+        }).then(result => {
+            res.status(201)
+            res.send(result)
+        })
+        console.log('is created');
+    } catch (err) {
+        console.log(err);
+    }
 }
 
 
