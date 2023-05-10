@@ -18,14 +18,14 @@ exports.test = (req, res) => {
 // const { ObjectId } = require('mongodb');
 
 // Util functions
-function isEmptyList(obj) {
-    return (!obj || obj.length == 0 || Object.keys(obj).length == 0)
-}
+// function isEmptyList(obj) {
+//     return (!obj || obj.length == 0 || Object.keys(obj).length == 0)
+// }
 // Handle error
-function handleError(res, err) {
-    res.status(200)
-    res.send('Something went wrong\n' + err)
-}
+// function handleError(res, err) {
+//     res.status(200)
+//     res.send('Something went wrong\n' + err)
+// }
 
 // uri: /api/providers
 // POST
