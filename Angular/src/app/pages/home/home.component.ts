@@ -12,9 +12,17 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
   page:string = '1'
+  modal:boolean = false
 
   selectPage(number:string){
     this.page = number
+  }
+
+  activeModal(){
+    this.modal = true
+    setTimeout(() => {
+      this.modal = false
+    }, 700);
   }
 
 }

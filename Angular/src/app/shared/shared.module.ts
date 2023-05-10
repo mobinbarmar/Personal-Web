@@ -4,6 +4,7 @@ import { Card1Component } from './card1/card1.component';
 import { LogoComponent } from './logo/logo.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
+import { Modal1Component } from './modal1/modal1.component';
 
 
 
@@ -12,7 +13,8 @@ import { FooterComponent } from './footer/footer.component';
     Card1Component,
     LogoComponent,
     NavComponent,
-    FooterComponent
+    FooterComponent,
+    Modal1Component
   ],
   imports: [
     CommonModule
@@ -21,7 +23,8 @@ import { FooterComponent } from './footer/footer.component';
     Card1Component,
     LogoComponent,
     NavComponent,
-    FooterComponent
+    FooterComponent,
+    Modal1Component
   ]
 })
 export class SharedModule { }
