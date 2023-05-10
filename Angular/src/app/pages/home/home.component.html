@@ -17,7 +17,7 @@
 
     <div class="mt-4 mt-md-5">
       <button class="btn btn-primary px-5 d-none d-md-block" (click)="activeModal()">See my Samples</button>
-      <button class="btn btn-dark px-5 d-block d-md-none">See my Samples</button>
+      <button class="btn btn-dark px-5 d-block d-md-none" (click)="activeModal()">See my Samples</button>
     </div>
   </div>
   <!--! Mobile -->
@@ -32,8 +32,8 @@
     </div>
 
     <div class="mt-4 mt-md-5">
-      <button class="btn btn-primary px-5 d-none d-md-block">See my Samples</button>
-      <button class="btn btn-dark px-5 d-block d-md-none">See my Samples</button>
+      <button class="btn btn-primary px-5 d-none d-md-block" (click)="activeModal()">See my Samples</button>
+      <button class="btn btn-dark px-5 d-block d-md-none" (click)="activeModal()">See my Samples</button>
     </div>
   </div>
 
@@ -72,9 +72,9 @@
   <div class="py-2 container">
     <!-- !Mobile -->
     <div class="col-11 d-md-none d-flex flex-column justify-content-center">
-      <app-card1></app-card1>
-      <app-card1></app-card1>
-      <app-card1></app-card1>
+      <app-card1 (click)="activeModal()"></app-card1>
+      <app-card1 (click)="activeModal()"></app-card1>
+      <app-card1 (click)="activeModal()"></app-card1>
     </div>
 
 
@@ -115,24 +115,24 @@
       <div class="d-none d-md-block col-7">
         <div class="d-flex">
           <div class="col-6" *ngIf="page == '1'">
-            <app-card1 [text]="'Mobin'"></app-card1>
+            <app-card1 [text]="'Mobin'" (click)="activeModal()"></app-card1>
           </div>
           <div class="col-6" *ngIf="page == '1'">
-            <app-card1 ></app-card1>
+            <app-card1 (click)="activeModal()"></app-card1>
           </div>
           
           <div class="col-6" *ngIf="page == '2'">
-            <app-card1></app-card1>
+            <app-card1 (click)="activeModal()"></app-card1>
           </div>
           <div class="col-6" *ngIf="page == '2'">
-            <app-card1 [text]="'Sina'"></app-card1>
+            <app-card1 [text]="'Sina'" (click)="activeModal()"></app-card1>
           </div>
 
           <div class="col-6" *ngIf="page == '3'">
-            <app-card1 [text]="'Mehdi'"></app-card1>
+            <app-card1 [text]="'Mehdi'" (click)="activeModal()"></app-card1>
           </div>
           <div class="col-6" *ngIf="page == '3'">
-            <app-card1></app-card1>
+            <app-card1 (click)="activeModal()"></app-card1>
           </div>
         </div>
 
@@ -200,7 +200,7 @@
         </div>
       </div>
       <div>
-        <button class="btn btn-primary ms-4">Submit</button>
+        <button class="btn btn-primary ms-4" (click)="activeModal()">Submit</button>
       </div>
     </div>
   </div>
@@ -230,7 +230,7 @@
       <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Description"></textarea>
     </div>
     <div class="mt-4">
-      <button class="btn btn-primary w-100">Submit</button>
+      <button class="btn btn-primary w-100" (click)="activeModal()">Submit</button>
     </div>
   </div>
 

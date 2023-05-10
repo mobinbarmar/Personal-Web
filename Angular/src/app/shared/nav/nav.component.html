@@ -1,3 +1,4 @@
+<app-modal1 *ngIf="modal"></app-modal1>
 <section>
     <div class="bg-black2 d-none d-md-block" style="z-index: 999;">
         <div class="d-flex justify-content-between align-items-center py-2 container">
@@ -10,8 +11,8 @@
                 </div>
             </div>
             <div>
-                <button class="btn btn-primary me-3 btn-sm">Login</button>
-                <button class="btn btn-outline-primary btn-sm">Sign up</button>
+                <button class="btn btn-primary me-3 btn-sm" (click)="activeModal()">Login</button>
+                <button class="btn btn-outline-primary btn-sm" (click)="activeModal()">Sign up</button>
             </div>
         </div>
     </div>
@@ -33,7 +34,7 @@
             <a href="#" class="mt-5">Home</a>
             <a href="#" class="mt-5">Samples</a>
             <a href="#" class="mt-5">About me</a>
-            <a href="#" class="mt-5">Login</a>
+            <a href="#" class="mt-5" (click)="activeModal()">Login</a>
         </div>
     </div>
 </section>

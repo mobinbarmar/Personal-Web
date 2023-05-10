@@ -11,11 +11,18 @@ export class NavComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  modal:boolean = false
 
   optionToggle: boolean = false
 
   OptionToggle(){
     this.optionToggle = !this.optionToggle
+  }
+  activeModal(){
+    this.modal = true
+    setTimeout(() => {
+      this.modal = false
+    }, 700);
   }
 
 }
