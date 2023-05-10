@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const {
-    Provider
-} = require('../models/provider');
+    Test
+} = require('../models/model');
 
 // Connection URI to MongoDB
 const uri = 'mongodb://localhost:27023/test_db'
@@ -19,4 +19,4 @@ mongoose.connect(uri, {
     }).catch((err) => console.log(err))
 
 
-module.exports = Provider
+module.exports = Test

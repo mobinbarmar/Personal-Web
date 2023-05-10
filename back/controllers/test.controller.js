@@ -13,9 +13,9 @@ exports.test = (req, res) => {
 
 
 
-// let providers = require('../models/providers.models');
-// const Provider = require('../db/db');
-// const { ObjectId } = require('mongodb');
+// let tests = require('../models/tests.models');
+const Test = require('../db/DB');
+const { ObjectId } = require('mongodb');
 
 // Util functions
 // function isEmptyList(obj) {
