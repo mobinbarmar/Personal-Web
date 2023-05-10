@@ -1,6 +1,5 @@
 
 exports.test = (req, res) => {
-    res.json({'mobin': 'this is a message 1'})
     try {
         Test.create({
             'name': 'Mobin',
