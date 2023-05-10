@@ -1,9 +1,20 @@
-// const mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
-// //Define a schema
-// const Schema = mongoose.Schema
+//Define a schema
+const Schema = mongoose.Schema
 
-// // Create company schema (child)
+const testSchema = new Schema({
+    'name': {
+        type: String,
+        required: true
+    },
+    'family': {
+        type: String,
+        required: true
+    }
+})
+
+// Create company schema (child)
 // const companySchema = new Schema({
 //     "company_name": {
 //         type: String,
