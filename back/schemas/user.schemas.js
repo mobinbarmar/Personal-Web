@@ -14,6 +14,9 @@ const testSchema = new Schema({
     }
 })
 
+module.exports = {
+    testSchema
+}
 // Create company schema (child)
 // const companySchema = new Schema({
 //     "company_name": {
