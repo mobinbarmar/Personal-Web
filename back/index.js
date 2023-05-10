@@ -2,7 +2,6 @@ let createError = require('http-errors');
 let express = require('express');
 let path = require('path');
 let cookieParser = require('cookie-parser');
-let logger = require('morgan');
 const cors = require('cors');
 
 // let indexRouter = require('./routes/index');
@@ -14,17 +13,22 @@ let apiRouter = require('./routes/test');
 let app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
 
-app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({
+  extended: false
+}));
 app.use(cookieParser());
-app.use(cors({'origin': 'http://localhost:4200'}))
+app.use(cors({
+  "origin": "*",
+  "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+  "preflightContinue": false,
+  "optionsSuccessStatus": 204
+}))
 
-app.get('/', (req,res) => {
-    res.json({'name': 'mobin'})
-})
+// app.get('/', (req,res) => {
+//     res.json({'name': 'mobin'})
+// })
 // app.use('/', indexRouter);
 // app.use('/users', usersRouter);
 // app.use('/providers', providerRouter)
@@ -32,12 +36,12 @@ app.use('/api', apiRouter)
 // app.use('/*', indexRouter)
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
 
@@ -47,5 +51,5 @@ app.use(function(err, req, res, next) {
 });
 
 app.listen(3000, () => {
-    console.log('http://localhost:3000');
+  console.log('http://localhost:3000');
 })

@@ -1,6 +1,6 @@
 
 exports.test = (req, res) => {
-    res.json({'mobin': 'this is a message'})
+    res.json({'mobin': 'this is a message 1'})
 }
 
 

@@ -25,6 +25,6 @@ let router = express.Router();
 //     res.send('Not valid endpoint')
 // }
 
-router.get('/', testController)
+router.get('/', testController.test)
 
 module.exports = router;

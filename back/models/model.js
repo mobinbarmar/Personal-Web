@@ -1,7 +1,7 @@
-const mongoose = require('mongoose');
-const { providerSchema } = require('../schemas/provider.schemas');
+// const mongoose = require('mongoose');
+// const { providerSchema } = require('../schemas/provider.schemas');
 
-// Create provider model
-const Provider = mongoose.model('Providers', providerSchema)
+// // Create provider model
+// const Provider = mongoose.model('Providers', providerSchema)
 
-module.exports = { Provider }
+// module.exports = { Provider }
