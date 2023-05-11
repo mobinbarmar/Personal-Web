@@ -208,32 +208,33 @@
     </div>
   </form>
   <!-- !Mobile -->
-  <form class="d-md-none">
+  <form class="d-md-none" [formGroup]="form">
     <div class="input-group-lg mt-5">
-      <input type="text" class="form-control" placeholder="Name">
+      <input type="text" class="form-control" placeholder="Name" formControlName="firstName">
     </div>
     <div class="input-group-lg mt-3">
-      <input type="text" class="form-control" placeholder="Family">
+      <input type="text" class="form-control" placeholder="Family" formControlName="lastName">
     </div>
     <div class="input-group-lg mt-3">
-      <input type="email" class="form-control" placeholder="E-mail">
+      <input type="email" class="form-control" placeholder="E-mail" formControlName="email">
     </div>
     <div class="d-flex justify-content-between mt-3">
       <div class="input-group-lg col-2">
-        <select name="" id="" class="form-control">
+        <select name="" id="" class="form-control" formControlName="code">
           <option value="+98">IR</option>
           <option value="+1" selected>US</option>
+          <option value="+1" selected>CA</option>
         </select>
       </div>
       <div class="input-group-lg col-9">
-        <input type="text" class="form-control" placeholder="Phone number">
+        <input type="text" class="form-control" placeholder="Phone number" formControlName="phone">
       </div>
     </div>
     <div class="input-group-lg mt-3">
-      <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Description"></textarea>
+      <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Description" formControlName="description"></textarea>
     </div>
     <div class="mt-4">
-      <button class="btn btn-primary w-100" (click)="activeModal()">Submit</button>
+      <button class="btn btn-primary w-100" (click)="submit()">Submit</button>
     </div>
   </form>
 
