@@ -29,8 +29,13 @@ export class HomeComponent implements OnInit {
     firstName: new FormControl(''),
     lastName: new FormControl(''),
     email: new FormControl(''),
+    code: new FormControl(''),
     phone: new FormControl(''),
     description: new FormControl(''),
   })
+
+  submit(){
+    console.log(this.form.value);
+  }
 
 }
