@@ -19,6 +19,7 @@
     "mongodb": "^5.0.1",
     "mongoose": "^6.9.2",
     "morgan": "~1.9.1",
+    "node-telegram-bot-api": "^0.61.0",
     "nodemon": "^2.0.20"
   }
 }
