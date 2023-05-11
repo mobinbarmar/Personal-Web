@@ -26,7 +26,8 @@ import { ProgressbarComponent } from './progressbar/progressbar.component';
     LogoComponent,
     NavComponent,
     FooterComponent,
-    Modal1Component
+    Modal1Component,
+    ProgressbarComponent
   ]
 })
 export class SharedModule { }
