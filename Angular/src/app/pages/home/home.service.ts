@@ -11,8 +11,6 @@ export class HomeService {
 
   postForm(body:any){
     console.log('mobin')
-    return this.http.post(environment.API, body).subscribe((res) => {
-      console.log(res)
-    })
+    return this.http.post(environment.API, body)
   }
 }
