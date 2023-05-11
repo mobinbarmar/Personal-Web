@@ -1,7 +1,11 @@
 const mongoose = require('mongoose');
-const { testSchema } = require('../schemas/test.schemas');
+const { testSchema, postSchema } = require('../schemas/test.schemas');
 
 // Create provider model
 const Test = mongoose.model('tests', testSchema)
+const Post = mongoose.model('posts', postSchema)
 
-module.exports = { Test }
+module.exports = {
+    Test,
+    Post
+}

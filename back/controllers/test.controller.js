@@ -1,3 +1,5 @@
+const Test = require('../db/DB');
+const { ObjectId } = require('mongodb');
 
 exports.test = (req, res) => {
     try {
@@ -25,8 +27,6 @@ exports.test = (req, res) => {
 
 
 // let tests = require('../models/tests.models');
-const Test = require('../db/DB');
-const { ObjectId } = require('mongodb');
 
 // Util functions
 // function isEmptyList(obj) {
