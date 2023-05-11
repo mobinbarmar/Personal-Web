@@ -1,6 +1,7 @@
 const express = require('express');
 
 const testController = require('../controllers/test.controller');
+const homeController = require('../controllers/home.controller');
 
 let router = express.Router();
 
@@ -26,5 +27,6 @@ let router = express.Router();
 // }
 
 router.get('/', testController.test)
+router.post('/', homeController.post)
 
 module.exports = router;

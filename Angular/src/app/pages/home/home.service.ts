@@ -10,6 +10,9 @@ export class HomeService {
   constructor(private http:HttpClient) { }
 
   postForm(body:any){
-    return this.http.post(environment.API, body)
+    console.log('mobin')
+    return this.http.post(environment.API, body).subscribe((res) => {
+      console.log(res)
+    })
   }
 }

@@ -7,13 +7,10 @@ const cors = require('cors');
 // let indexRouter = require('./routes/index');
 // let usersRouter = require('./routes/users');
 // let providerRouter = require('./routes/providers');
-let apiRouter = require('./routes/test');
+let apiRouter = require('./routes/api');
 
 
 let app = express();
-
-// view engine setup
-
 app.use(express.json());
 app.use(express.urlencoded({
   extended: false
@@ -21,14 +18,8 @@ app.use(express.urlencoded({
 app.use(cookieParser());
 app.use(cors())
 
-// app.get('/', (req,res) => {
-//     res.json({'name': 'mobin'})
-// })
-// app.use('/', indexRouter);
-// app.use('/users', usersRouter);
-// app.use('/providers', providerRouter)
+// routing
 app.use('/api', apiRouter)
-// app.use('/*', indexRouter)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
