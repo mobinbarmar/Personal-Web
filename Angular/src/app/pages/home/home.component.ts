@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { HomeService } from './home.service';
 
 @Component({
@@ -29,29 +29,37 @@ export class HomeComponent implements OnInit {
   }
 
   form = new FormGroup({
-    firstName: new FormControl(''),
-    lastName: new FormControl(''),
-    email: new FormControl(''),
-    code: new FormControl(''),
-    phone: new FormControl(''),
-    description: new FormControl(''),
+    firstName: new FormControl('', Validators.required),
+    lastName: new FormControl('', Validators.required),
+    email: new FormControl('', Validators.required),
+    code: new FormControl('', Validators.required),
+    phone: new FormControl('', Validators.required),
+    description: new FormControl('', Validators.required),
   })
 
   submit(){
-    this.homeSer.postForm(this.form.value).subscribe((res) => {
-      this.postMessage = 'It\'s posted!'
-      this.postModal = true
-      setTimeout(() => {
-        this.postModal = false
-      }, 700);
-    }, (err) => {
-      console.log(err)
-      this.postMessage = 'There is a problem'
-      this.postModal = true
-      setTimeout(() => {
-        this.postModal = false
-      }, 700);
-    })
+    if(this.form.valid){
+      this.homeSer.postForm(this.form.value).subscribe((res) => {
+        this.postMessage = 'It\'s posted!'
+        this.postModal = true
+        setTimeout(() => {
+          this.postModal = false
+        }, 700);
+      }, (err) => {
+        console.log(err)
+        this.postMessage = 'There is a problem'
+        this.postModal = true
+        setTimeout(() => {
+          this.postModal = false
+        }, 700);
+      })
+    }else{
+      this.postMessage = 'Please fill all blanks!'
+        this.postModal = true
+        setTimeout(() => {
+          this.postModal = false
+        }, 700);
+    }
   }
 
 }
