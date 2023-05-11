@@ -12,7 +12,6 @@ export class NavComponent implements OnInit {
   ngOnInit(): void {
   }
   modal:boolean = false
-
   optionToggle: boolean = false
 
   OptionToggle(){
