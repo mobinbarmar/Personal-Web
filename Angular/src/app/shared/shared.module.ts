@@ -5,6 +5,7 @@ import { LogoComponent } from './logo/logo.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { Modal1Component } from './modal1/modal1.component';
+import { ProgressbarComponent } from './progressbar/progressbar.component';
 
 
 
@@ -14,7 +15,8 @@ import { Modal1Component } from './modal1/modal1.component';
     LogoComponent,
     NavComponent,
     FooterComponent,
-    Modal1Component
+    Modal1Component,
+    ProgressbarComponent
   ],
   imports: [
     CommonModule
