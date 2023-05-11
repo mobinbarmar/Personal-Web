@@ -5,6 +5,13 @@ const homeController = require('../controllers/home.controller');
 
 let router = express.Router();
 
+router.get('/', testController.test)
+router.post('/', homeController.post)
+
+module.exports = router;
+
+
+
 // const mainController = require('../controllers/main.controller');
 
 // HTTP Verbs
@@ -26,7 +33,3 @@ let router = express.Router();
 //     res.send('Not valid endpoint')
 // }
 
-router.get('/', testController.test)
-router.post('/', homeController.post)
-
-module.exports = router;
