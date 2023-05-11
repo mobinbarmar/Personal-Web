@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -7,22 +8,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
   page:string = '1'
   modal:boolean = false
+
+  constructor() { }
+  ngOnInit(): void {
+  }
 
   selectPage(number:string){
     this.page = number
   }
-
   activeModal(){
     this.modal = true
     setTimeout(() => {
       this.modal = false
     }, 700);
   }
+
+  form = new FormGroup({
+    firstName: new FormControl(''),
+    lastName: new FormControl(''),
+    email: new FormControl(''),
+    phone: new FormControl(''),
+    description: new FormControl(''),
+  })
 
 }
