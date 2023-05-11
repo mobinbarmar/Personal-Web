@@ -178,10 +178,10 @@
       <textarea name="" id="" cols="30" rows="10" placeholder="Description" class="form-control"></textarea>
     </div>
 
-    <form class="d-flex flex-column justify-content-between col-6">
+    <form [formGroup]="form" class="d-flex flex-column justify-content-between col-6">
       <div class="d-flex justify-content-around">
         <div class="col-5 input-group-lg">
-          <input type="text" placeholder="Name" class="form-control">
+          <input type="text" placeholder="Name" class="form-control" formControlName="firstName">
         </div>
         <div class="col-5 input-group-lg">
           <input type="text" placeholder="Family" class="form-control">
