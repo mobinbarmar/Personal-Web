@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { HomeService } from './home.service';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,7 @@ export class HomeComponent implements OnInit {
   page:string = '1'
   modal:boolean = false
 
-  constructor() { }
+  constructor(private homeSer:HomeService) { }
   ngOnInit(): void {
   }
 
@@ -35,7 +36,7 @@ export class HomeComponent implements OnInit {
   })
 
   submit(){
-    console.log(this.form.value);
+    this.homeSer.postForm(this.form.value)
   }
 
 }
