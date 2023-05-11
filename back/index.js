@@ -16,7 +16,9 @@ app.use(express.urlencoded({
   extended: false
 }));
 app.use(cookieParser());
-app.use(cors())
+app.use(cors({
+  'Access-Control-Allow-Origin': 'http://mobin-barmar.ir'
+}))
 
 // routing
 app.use('/api', apiRouter)
